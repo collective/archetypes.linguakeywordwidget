@@ -3,6 +3,12 @@ Introduction
 
 This addon is an archetypes multilingual keyword widget for Plone.
 
+How to install
+==============
+
+This addon can be installed as any Plone addons. Please follow the official
+documentation_.
+
 How it works
 ============
 
@@ -22,10 +28,37 @@ that access to data you must first remove language that way::
 
 
 redomino.keywordalias_
-----------------------
+======================
 
 keywordalias achieve same goal in a different way. With keyword alias
 your keywords are translated in backoffice. With linguakeywords you have
 just different keywords.
 
+Credits
+=======
+
+Companies
+---------
+
+|cirb|_ CIRB / CIBG
+
+* `Contact us <mailto:irisline@irisnet.be>`_
+
+|makinacom|_
+
+  * `Planet Makina Corpus <http://www.makina-corpus.org>`_
+  * `Contact us <mailto:python@makina-corpus.org>`_
+
+Authors
+
+- JeanMichel FRANCOIS aka toutpt <toutpt@gmail.com>
+
+.. Contributors
+
+.. |cirb| image:: http://www.cirb.irisnet.be/logo.jpg
+.. _cirb: http://cirb.irisnet.be
+.. _sitemap: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=183668&topic=8476&ctx=topic
+.. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
+.. _makinacom:  http://www.makina-corpus.com
+.. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to
 .. _redomino.keywordalias: https://github.com/redomino/redomino.keywordalias
