@@ -8,8 +8,10 @@ How to use
 
 As any widget for Archetypes::
 
-  Schema((
-    LinesField('subject',
+  from Products.Archetypes.atapi
+  from archetypes.linguakeywordwidget.widget import LinguaKeywordWidget
+  atapi.Schema((
+    atapi.LinesField('subject',
        multiValued=1,
        accessor="Subject",
         widget=LinguaKeywordWidget()),
