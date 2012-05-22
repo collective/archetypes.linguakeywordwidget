@@ -3,11 +3,17 @@ Introduction
 
 This addon is an archetypes multilingual keyword widget for Plone.
 
-How to install
-==============
+How to use
+==========
 
-This addon can be installed as any Plone addons. Please follow the official
-documentation_.
+As any widget for Archetypes::
+
+  Schema((
+    LinesField('subject',
+       multiValued=1,
+       accessor="Subject",
+        widget=LinguaKeywordWidget()),
+  ))
 
 How it works
 ============
