@@ -14,6 +14,7 @@
             <div metal:define-macro="keyword-field-view"
                 tal:define="kss_class python:getKssClasses(fieldName,
                                   templateId='widgets/keyword', macro='keyword-field-view');
+                                  language context/Language;
                                   uid context/UID|nothing"
                 tal:attributes="class kss_class;
                                 id string:parent-fieldname-$fieldName-$uid">
@@ -30,8 +31,10 @@
                         allowedKeywords python: context.collectKeywords(fieldName, field.accessor, widget.vocab_source);
                         site_props context/portal_properties/site_properties|nothing;
                         format widget/format | string:select;
+                        language context/Language;
+                        value python:context.getlinguakeywordsvalue(value);
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">
-            
+            <span tal:content="allowedKeywords"></span>
                     <div tal:condition="allowedKeywords" id="existingTagsSection">
                         <tal:comment tal:replace="nothing">
                             dl semantically associates selector name with values
@@ -135,6 +138,7 @@
                             </label>
                             <br />
                             <dd id="newTags">
+
                                 <textarea 
                                     id="entered_subjects"
                                     name="subject:lines"
