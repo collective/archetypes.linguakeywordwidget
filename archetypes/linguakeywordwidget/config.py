@@ -1,3 +1,3 @@
 PROJECTNAME = "linguakeywordwidget"
 
-WITH_SAMPLE_TYPES = True
+WITH_SAMPLE_TYPES = False
