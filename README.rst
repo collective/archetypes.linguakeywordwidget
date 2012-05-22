@@ -1,13 +1,24 @@
 Introduction
 ============
 
-This addon is an archetypes widget for Plone to make Keyword field 
-support multilingual.
+This addon is an archetypes multilingual keyword widget for Plone.
 
 How it works
 ============
 
-Keywords are prefixes with language code (en-my great keyword)
+Keywords are stored in catalog but prefixes with language code before write
+and unprefixed before display. It means if you have widget / viewlet /view
+that access to data you must first remove language that way::
+
+    keywords = context.Subject()
+    linguakeywords = []
+    language = context.Language()
+    for keyword in value:
+        if keyword.startswith('%s-' % language):
+            linguakeywords.append(keyword[len(language) + 1:])
+        else:
+            linguakeywords.append(keyword)
+    return linguakeywords
 
 
 redomino.keywordalias_

@@ -15,6 +15,7 @@
                 tal:define="kss_class python:getKssClasses(fieldName,
                                   templateId='widgets/keyword', macro='keyword-field-view');
                                   language context/Language;
+                                  accessor python:context.getLinguaKeywordsFromValue(accessor());
                                   uid context/UID|nothing"
                 tal:attributes="class kss_class;
                                 id string:parent-fieldname-$fieldName-$uid">
@@ -32,7 +33,7 @@
                         site_props context/portal_properties/site_properties|nothing;
                         format widget/format | string:select;
                         language context/Language;
-                        value python:context.getlinguakeywordsvalue(value);
+                        value python:context.getLinguaKeywordsFromValue(value);
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">
             <span tal:content="allowedKeywords"></span>
                     <div tal:condition="allowedKeywords" id="existingTagsSection">
