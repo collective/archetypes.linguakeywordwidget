@@ -35,7 +35,7 @@
                         language context/Language;
                         value python:context.getLinguaKeywordsFromValue(value);
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">
-            <span tal:content="allowedKeywords"></span>
+
                     <div tal:condition="allowedKeywords" id="existingTagsSection">
                         <tal:comment tal:replace="nothing">
                             dl semantically associates selector name with values

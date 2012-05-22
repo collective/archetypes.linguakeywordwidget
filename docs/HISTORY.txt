@@ -4,8 +4,7 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- remove span log in edit mode
 
 1.0a1 (2012-05-22)
 ------------------
