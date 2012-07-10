@@ -30,7 +30,5 @@ linguakeywords = []
 for keyword in result:
     if keyword.startswith('%s-' % language):
         linguakeywords.append(keyword[len(language) + 1:])
-    else:
-        linguakeywords.append(keyword)
 
 return linguakeywords
