@@ -35,6 +35,9 @@ class LinguaKeywordWidget(KeywordWidget):
         if not first and emptyReturnsMarker:
             return empty_marker
 
+        if first is empty_marker:
+            return empty_marker
+
         language = instance.Language()
         keywords = first[0]
         linguakeywords = []

@@ -4,7 +4,7 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix issue when no keyword exists and no one is added by the user
 
 
 1.0a3 (2012-07-10)
