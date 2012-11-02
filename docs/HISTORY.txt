@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0a4 (unreleased)
-------------------
+1.0 (2012-11-02)
+----------------
 
 - Fix issue when no keyword exists and no one is added by the user
 
