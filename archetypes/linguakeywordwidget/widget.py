@@ -41,6 +41,7 @@ class LinguaKeywordWidget(KeywordWidget):
         language = instance.Language()
         keywords = first[0]
         linguakeywords = []
+
         for keyword in keywords:
             if keyword.startswith('%s-' % language):
                 linguakeywords.append(keyword)
