@@ -1,4 +1,4 @@
-## Script (Python) "collectKeywords"
+## Script (Python) "getLinguaKeywords"
 ##title=Edit content
 ##bind container=container
 ##bind context=context
@@ -9,8 +9,8 @@
 
 REQUEST = context.REQUEST
 
-#patch to support keyword widget using schema extender
-#let integrator work around that issue
+# patch to support keyword widget using schema extender
+# let integrator work around that issue
 if index is None:
     index = name
 
@@ -29,7 +29,7 @@ else:
 
 result = result.sortedByValue()
 
-#override to remove language from collectKeywords
+# remove language from collectKeywords
 language = context.Language()
 linguakeywords = []
 for keyword in result:
