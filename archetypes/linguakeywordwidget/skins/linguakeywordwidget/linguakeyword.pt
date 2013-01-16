@@ -29,7 +29,7 @@
         <metal:define define-macro="edit">
             <metal:use use-macro="field_macro | context/widgets/field/macros/edit">
                 <tal:define metal:fill-slot="widget_body" define="contentKeywords accessor;
-                        allowedKeywords python: context.collectKeywords(fieldName, field.accessor, widget.vocab_source);
+                        allowedKeywords python: context.getLinguaKeywords(fieldName, field.accessor, widget.vocab_source);
                         site_props context/portal_properties/site_properties|nothing;
                         format widget/format | string:select;
                         language context/Language;

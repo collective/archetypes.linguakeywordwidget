@@ -34,6 +34,7 @@ language = context.Language()
 linguakeywords = []
 for keyword in result:
     if keyword.startswith('%s-' % language):
-        linguakeywords.append(keyword[len(language) + 1:])
+        real_keyword = keyword[len(language) + 1:]
+        linguakeywords.append(real_keyword)
 
 return linguakeywords
