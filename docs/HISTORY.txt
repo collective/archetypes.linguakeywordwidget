@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2013-01-16)
 ----------------
 
 - Add a workaround to make collectKeyword script support field added with schemaextender.
