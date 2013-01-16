@@ -31,7 +31,7 @@ setup(name='archetypes.linguakeywordwidget',
           'Products.Archetypes',
           # -*- Extra requirements: -*-
       ],
-      extras_require={"tests": ['plone.app.testing']},
+      extras_require={"tests": ['plone.app.testing', 'plone.api']},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
