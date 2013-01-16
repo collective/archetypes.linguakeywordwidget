@@ -5,7 +5,8 @@ Changelog
 ----------------
 
 - Add a workaround to make collectKeyword script support field added with schemaextender.
-
+- Rename the collectKeyword script to getLinguaKeywords to not conflict existings instance
+- Add tests
 
 1.0 (2012-11-02)
 ----------------
